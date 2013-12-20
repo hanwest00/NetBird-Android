@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" style="@style/MsgMain" android:id="@+id/msg_main_layout"
+	android:focusable="true" android:focusableInTouchMode="true"
+	>
+	<TextView android:id="@+id/msg_title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" style="@style/IpViewTitle" />
+	<HorizontalScrollView android:id="@+id/msg_content" android:scrollbars="vertical"
+		android:background="@drawable/shape_corners" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@id/msg_title" ></HorizontalScrollView>
+	<TableLayout android:layout_gravity="bottom" android:id="@+id/msg_table" android:layout_below="@id/msg_content"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TableRow>
+			<EditText android:id="@+id/msg_edit" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:height="30dp" />
+			<Button android:id="@+id/msg_btn" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:height="30dp"
+				android:text="@string/send_btn" />
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>
