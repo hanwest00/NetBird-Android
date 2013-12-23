@@ -6,9 +6,12 @@
 	>
 	<TextView android:id="@+id/msg_title" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" style="@style/IpViewTitle" />
-	<HorizontalScrollView android:id="@+id/msg_content" android:scrollbars="vertical"
+	<ScrollView android:id="@+id/msg_content_scroll" android:scrollbars="vertical"
 		android:background="@drawable/shape_corners" android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:layout_below="@id/msg_title" ></HorizontalScrollView>
+		android:layout_height="wrap_content" android:layout_below="@id/msg_title" >
+		<LinearLayout android:id="@+id/msg_content" android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></LinearLayout>
+		</ScrollView>
 	<TableLayout android:layout_gravity="bottom" android:id="@+id/msg_table" android:layout_below="@id/msg_content"
 		android:layout_width="fill_parent" android:layout_height="wrap_content">
 		<TableRow>

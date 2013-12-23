@@ -4,14 +4,14 @@
 	android:versionName="1.0">
 	<application android:icon="@drawable/netbird" android:label="@string/app_name" android:debuggable="true">
 		<activity android:name=".NetBird" android:label="@string/app_name"
-			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			android:theme="@android:style/Theme.NoTitleBar">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
 		<activity android:name=".MessageView" launchMode="singleTop" android:label="@string/app_name"
-			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			android:theme="@android:style/Theme.NoTitleBar">
 		</activity>
 	</application>
 	<supports-screens android:smallScreens="true"

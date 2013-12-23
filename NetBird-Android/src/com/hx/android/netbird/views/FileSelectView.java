@@ -129,6 +129,7 @@ public class FileSelectView extends LinearLayout {
 				{
 					selectedFiles.add(f);
 					fileDirSelected.selected(selectedFiles, currDir);
+					selectedFiles.clear();
 				}
 			}
 		});
